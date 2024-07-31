@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Administrador">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_opciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/k2d_italic"
+                android:text="OPCIONES"
+                android:textSize="22dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/botones_acciones1"
+                android:layout_below="@id/text_opciones"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/boton_actualizar_estado"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Actualizar estado"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/boton_agregar_elementos"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Agregar elementos"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="10dp"/>
+
+                <Button
+                    android:id="@+id/boton_eliminar_elementos"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Eliminar elementos"
+                    android:fontFamily="sans-serif-black"
+                    android:layout_marginStart="10dp"
+                    android:textSize="10dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/botones_acciones2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/botones_acciones1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/boton_eliminar_usuario"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Eliminar filial"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/boton_agregar_usuario"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Agregar filial"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/botones_acciones2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/k2d_italic"
+                android:text="Nombre del elemento"
+                android:textSize="16dp"
+                android:visibility="gone"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/edit_buscar_filial"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/text_admin"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/text_inicio"
+                app:hintText="Elija una filial"
+                android:padding="6dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/boton_actualizar_filial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_buscar_filial"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:text="Actualizar"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/edit_agregar_elemento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/text_admin"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/text_inicio"
+                android:hint="Ingrese un elemento"
+                android:paddingLeft="20dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/boton_agregar_elem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_agregar_elemento"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:text="Agregar"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/edit_eliminar_elemento"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/text_admin"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/text_inicio"
+                app:hintText="Elija un elemento"
+                android:padding="6dp"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/boton_eliminar_elem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/edit_eliminar_elemento"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:text="Eliminar"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_agregar_filial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_admin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp">
+
+                <EditText
+                    android:id="@+id/edit_agregar_nombre_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_inicio"
+                    android:layout_marginEnd="20dp"
+                    android:hint="Ingrese el nombre"
+                    android:padding="6dp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/edit_agregar_numero_usuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_inicio"
+                    android:hint="Ingrese el numero"
+                    android:padding="6dp"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/boton_agregar_usu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linear_agregar_filial"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:text="Agregar"
+                android:textSize="10dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/logo_colores" />
+        </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

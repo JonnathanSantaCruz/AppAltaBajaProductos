@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Scaner </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="volver">Volver</string>
+    <string name="nombre_del_elemento">Nombre del elemento</string>
+    <string name="datos_necesarios_del_tecnico">DATOS NECESARIOS DEL TECNICO</string>
+    <string name="nombre">NOMBRE</string>
+    <string name="apellido">APELLIDO</string>
+    <string name="dni">DNI</string>
+    <string name="numero_de_contacto">NUMERO DE CONTACTO</string>
+    <string name="cantidad_de_cajas_para_usar">CANTIDAD DE CAJAS</string>
+    <string name="agregar_tecnico">AGREGAR TECNICO</string>
+    <string name="productos_cargados">Productos Cargados</string>
+    <string name="eliminar_elemento">Eliminar elemento</string>
+    <string name="cerrar_caja">cerrar caja</string>
+    <string name="ingrese_su_contrase_a">Ingrese su contraseña</string>
+    <string name="eliminar_elementos">Eliminar elementos</string>
+    <string name="ingrese_su_contrasenia">Ingrese su contraseña</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="recordar_usuario">Recordar usuario</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="correo_electronico">Correo electronico</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="datos_de_implementacion">DATOS DE IMPLEMENTACION</string>
+    <string name="datos_del_tecnico">Datos del tecnico:</string>
+    <string name="implementacion">Implementacion:</string>
+    <string name="responsable">RESPONSABLE</string>
+    <string name="ingrese_su_numero_de_celular">Ingrese su numero de celular</string>
+    <string name="numero_de_implementacion">NUMERO DE IMPLEMENTACION</string>
+    <string name="ingrese_el_numero_de_implementacion">Ingrese el numero de implementacion</string>
+    <string name="ingrese_al_responsable_del_retiro">Ingrese al responsable del retiro</string>
+    <string name="para_donacion">Caja para donacion?</string>
+    <string name="elementos_cargados">Elementos Cargados</string>
+    <string name="filialxxxx_bancocredicoop_coop">filialxxxx@bancocredicoop.coop</string>
+</resources>

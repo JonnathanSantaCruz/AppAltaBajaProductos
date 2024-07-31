@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".IniciarSesion">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayoutIniciarSesion">
+
+        <ImageView
+            android:id="@+id/imagen_iniciar_sesion"
+            android:layout_width="250dp"
+            android:layout_height="130dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/logo_banco_inicio" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutIniciarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            android:id="@+id/text_correo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/edit_correo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/correo_electronico"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+
+        <EditText
+            android:id="@+id/edit_correo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/text_correo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/text_inicio"
+            android:hint="@string/filialxxxx_bancocredicoop_coop"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/text_contrasenia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_correo"
+            android:layout_alignStart="@+id/edit_contrasenia"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/contrase_a"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+
+        <EditText
+            android:id="@+id/edit_contrasenia"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/text_inicio"
+            android:layout_below="@+id/text_contrasenia"
+            android:layout_alignStart="@+id/edit_correo"
+            android:layout_alignEnd="@+id/edit_correo"
+            android:paddingStart="15dp"
+            android:hint="@string/contrase_a"
+            android:drawableEnd="@drawable/logo_no_ver"
+            android:paddingEnd="10dp"
+            android:longClickable="false"
+            android:inputType="textPassword"
+            android:textSize="15sp"/>
+
+
+        <CheckBox
+            android:id="@+id/CheckBoxRecordarUsuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_contrasenia"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/transparent"
+            android:buttonTint="@color/black"
+            android:fontFamily="sans-serif-light"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="@string/recordar_usuario"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+
+        <Button
+            android:id="@+id/button_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CheckBoxRecordarUsuario"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/iniciar_sesion" />
+    </RelativeLayout>
+</RelativeLayout>

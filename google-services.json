@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "58413775685",
+    "firebase_url": "https://scanner-2a80c-default-rtdb.firebaseio.com",
+    "project_id": "scanner-2a80c",
+    "storage_bucket": "scanner-2a80c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58413775685:android:bf9a55770856f7641f5c2c",
+        "android_client_info": {
+          "package_name": "com.example.scannerdecodigodebarras"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58413775685-kfssn8qb9s0vhhdp566eudigqc5nsks2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_zNLPmnCnqZAjULkzJ3QpShl-wvDlnok"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58413775685-kfssn8qb9s0vhhdp566eudigqc5nsks2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/escanearCodigo"
+            android:icon="@drawable/escanear_imagen"
+            android:title="Escanear codigo"/>
+
+        <item
+            android:id="@+id/mostrarElementos"
+            android:icon="@drawable/mostrar_imagen"
+            android:title="Mostrar elementos"/>
+</menu>
